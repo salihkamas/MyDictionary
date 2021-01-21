@@ -15,15 +15,6 @@ namespace MyDictionary
         }
         public void Add(K key,V value)
         {
-
-            for (int i = 0; i < keys.Length; i++)
-            {
-                if (i.Equals(key))
-                {
-                    Console.WriteLine("Bu anahtar başka bir eleman tarafından kullanılıyor.");
-                    return;
-                }
-            }
             K[] tempK = keys;
             V[] tempV = values;
             keys = new K[keys.Length + 1];
